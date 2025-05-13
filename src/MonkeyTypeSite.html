@@ -1,0 +1,932 @@
+<html lang="en" style="--font: &quot;Roboto Mono&quot;, &quot;Roboto Mono&quot;, &quot;Vazirmatn&quot;, monospace;"><head><link type="text/css" rel="stylesheet" href="/css/balloon.min.css"><link type="text/css" rel="stylesheet" href="/css/slimselect.min.css"><meta http-equiv="origin-trial" content="A/kargTFyk8MR5ueravczef/wIlTkbVk1qXQesp39nV+xNECPdLBVeYffxrM8TmZT6RArWGQVCJ0LRivD7glcAUAAACQeyJvcmlnaW4iOiJodHRwczovL2dvb2dsZS5jb206NDQzIiwiZmVhdHVyZSI6IkRpc2FibGVUaGlyZFBhcnR5U3RvcmFnZVBhcnRpdGlvbmluZzIiLCJleHBpcnkiOjE3NDIzNDIzOTksImlzU3ViZG9tYWluIjp0cnVlLCJpc1RoaXJkUGFydHkiOnRydWV9">
+    <script src="https://securepubads.g.doubleclick.net/pagead/managed/js/gpt/m202501070101/pubads_impl_page_level_ads.js"></script><script async="" src="https://secure.cdn.fastclick.net/js/cnvr-coreid/latest/coreid.min.js"></script><script type="text/javascript" async="" src="//carbon-cdn.ccgateway.net/script?id=monkeytype.com&amp;parentId=5bb3e20859"></script><script async="" src="https://secure.cdn.fastclick.net/js/cnvr-launcher/latest/launcher.min.js"></script><script async="" src="https://c.amazon-adsystem.com/aax2/apstag.js" id="pw_aps_tag"></script><script async="" src="https://fixedfold.com/chunks/ca61b1a62a/bf52ce3323c1f51e2184dad59f3f89bac71091.v1.js"></script><script type="text/javascript" async="" charset="utf-8" src="https://www.gstatic.com/recaptcha/releases/zIriijn3uj5Vpknvt_LnfNbF/recaptcha__en.js" crossorigin="anonymous" integrity="sha384-8mJgBUBw4uTWF9Ooxgb4sUuO9jKtaVm1I+8vb0qpxxX3cafec7ovH+goM3yD4UyO"></script><script>
+      document.addEventListener("keydown", function (e) {
+        if (e.key == "Escape") e.preventDefault();
+      });
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monkeytype | A minimalistic, customizable typing test</title>
+    <!-- default colors in case theme file fails to load -->
+    <style>
+      :root {
+        --bg-color: #323437;
+        --main-color: #e2b714;
+        --caret-color: #e2b714;
+        --sub-color: #646669;
+        --sub-alt-color: #2c2e31;
+        --text-color: #d1d0c5;
+        --error-color: #ca4754;
+        --error-extra-color: #7e2a33;
+        --colorful-error-color: #ca4754;
+        --colorful-error-extra-color: #7e2a33;
+      }
+    </style>
+    <link rel="icon" type="image/x-icon" sizes="32x32" href="/images/favicon/favicon.ico">
+    <link id="favicon" rel="shortcut icon" type="image/svg+xml" href="data:image/svg+xml;base64,CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB2aWV3Qm94PSIwIDAgNjQgNjQiPgogIDxzdHlsZT4KICAgICNiZ3tmaWxsOiMzMjM0Mzc7fQogICAgcGF0aHtmaWxsOiNlMmI3MTQ7fQogIDwvc3R5bGU+CiAgPGc+CiAgICA8cGF0aCBpZD0iYmciIGQ9Ik0wIDE2UTAgMCAxNiAwaDMycTE2IDAgMTYgMTZ2MzJxMCAxNi0xNiAxNkgxNlEwIDY0IDAgNDgiLz4KICAgIDxwYXRoIGQ9Ik05LjA5IDI0LjF2MjEuMmg1LjEyVjMzLjFxLjI1Ni00LjYxIDQuNDgtNC42MSAzLjQ2LjM4NCAzLjQ2IDMuODR2MTIuOWg1LjEydi0xMS41cS0uMTI4LTUuMjUgNC40OC01LjI1IDMuNDYuMzg0IDMuNDYgMy44NHYxMi45aDUuMTJ2LTEyLjJxMC05LjQ3LTcuMDQtOS40Ny00LjIyIDAtNy4wNCAzLjQ2LTIuMTgtMy40Ni02LjAyLTMuNDYtMy40NiAwLTYuMDIgMi40M3YtMi4wNU00NyAxOC45djUuMTJoLTQuNjF2NS4xMkg0N3YxNi4xaDUuMTJ2LTE2LjFoNC42MXYtNS4xMmgtNC42MVYxOC45Ii8+CiAgPC9nPgo8L3N2Zz4=">
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/favicon/apple-touch-icon.png">
+    <link rel="mask-icon" href="/images/favicon/safari-pinned-tab.svg" color="#eee">
+    <meta name="msapplication-TileColor" content="#e2b714">
+    <meta name="msapplication-config" content="/images/favicon/browserconfig.xml">
+    <meta id="metaThemeColor" name="theme-color" content="#323437">
+    <meta name="name" content="Monkeytype | A minimalistic, customizable typing test">
+    <meta name="image" content="https://monkeytype.com/images/mtsocial.png">
+    <meta name="description" content="The most customizable typing test website with a minimal design and a ton of features. Test yourself in various modes, track your progress and improve your speed.">
+    <meta name="keywords" content="typing speed test, typing speedtest, typing test, speedtest, speed test, typing, test, typing-test, typing test, monkey-type, monkeytype, monkey type, monkey-types, monkeytypes, monkey types, types, monkey, type, miodec, wpm, words per minute, typing website, minimalistic, custom typing test, customizable, customisable, themes, random words, smooth caret, smooth, new, new typing site, new typing website, minimalist typing website, minimalistic typing website, minimalist typing test">
+    <meta name="author" content="Miodec">
+    <meta property="og:title" content="Monkeytype | A minimalistic, customizable typing test">
+    <meta property="og:url" content="https://monkeytype.com/">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://monkeytype.com/images/mtsocial.png">
+    <meta property="og:description" content="The most customizable typing test website with a minimal design and a ton of features. Test yourself in various modes, track your progress and improve your speed.">
+    <meta name="twitter:title" content="Monkeytype | A minimalistic, customizable typing test">
+    <meta name="twitter:image" content="https://monkeytype.com/images/mtsocial.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="darkreader-lock">
+    <meta http-equiv="Cache-Control" content="no-store">
+    <script type="module" crossorigin="" src="/js/monkeytype.CvgOqDDv.js"></script>
+    <link rel="modulepreload" crossorigin="" href="/js/vendor.BBPyoBcs.js">
+    <link rel="modulepreload" crossorigin="" href="/js/misc.DiFWB3A7.js">
+    <link rel="modulepreload" crossorigin="" href="/js/firebase.CRXPIYPj.js">
+    <link rel="stylesheet" crossorigin="" href="/css/index.C1gtVanr.css">
+  <link rel="manifest" href="/manifest.json"><script async="true" src="//cdn.intergient.com/1024888/74058/ramp.js"></script><script type="text/javascript" async="" src="https://securepubads.g.doubleclick.net/tag/js/gpt.js"></script><script type="text/javascript" async="" src="https://cdn.intergi.com/prebid/prebid.js.br"></script><script type="text/javascript" async="" src="https://cdn.intergient.com/ramp_core.js"></script><script type="text/javascript" src="//cdn.intergient.com/pageos/2.1.11/pageos.js" async=""></script><script type="text/javascript" src="https://cdn.intergient.com/pageos/2.1.11/runtime.47c8a90878ee8e2a579e.js"></script><script type="text/javascript" src="https://cdn.intergient.com/pageos/2.1.11/main.e72e01cfd5ba548c2300.js"></script><meta http-equiv="origin-trial" content="AlK2UR5SkAlj8jjdEc9p3F3xuFYlF6LYjAML3EOqw1g26eCwWPjdmecULvBH5MVPoqKYrOfPhYVL71xAXI1IBQoAAAB8eyJvcmlnaW4iOiJodHRwczovL2RvdWJsZWNsaWNrLm5ldDo0NDMiLCJmZWF0dXJlIjoiV2ViVmlld1hSZXF1ZXN0ZWRXaXRoRGVwcmVjYXRpb24iLCJleHBpcnkiOjE3NTgwNjcxOTksImlzU3ViZG9tYWluIjp0cnVlfQ=="><meta http-equiv="origin-trial" content="Amm8/NmvvQfhwCib6I7ZsmUxiSCfOxWxHayJwyU1r3gRIItzr7bNQid6O8ZYaE1GSQTa69WwhPC9flq/oYkRBwsAAACCeyJvcmlnaW4iOiJodHRwczovL2dvb2dsZXN5bmRpY2F0aW9uLmNvbTo0NDMiLCJmZWF0dXJlIjoiV2ViVmlld1hSZXF1ZXN0ZWRXaXRoRGVwcmVjYXRpb24iLCJleHBpcnkiOjE3NTgwNjcxOTksImlzU3ViZG9tYWluIjp0cnVlfQ=="><meta http-equiv="origin-trial" content="A9wSqI5i0iwGdf6L1CERNdmsTPgVu44ewj8QxTBYgsv1LCPUVF7YmWOvTappqB1139jAymxUW/RO8zmMqo4zlAAAAACNeyJvcmlnaW4iOiJodHRwczovL2RvdWJsZWNsaWNrLm5ldDo0NDMiLCJmZWF0dXJlIjoiRmxlZGdlQmlkZGluZ0FuZEF1Y3Rpb25TZXJ2ZXIiLCJleHBpcnkiOjE3MzY4MTI4MDAsImlzU3ViZG9tYWluIjp0cnVlLCJpc1RoaXJkUGFydHkiOnRydWV9"><meta http-equiv="origin-trial" content="A+d7vJfYtay4OUbdtRPZA3y7bKQLsxaMEPmxgfhBGqKXNrdkCQeJlUwqa6EBbSfjwFtJWTrWIioXeMW+y8bWAgQAAACTeyJvcmlnaW4iOiJodHRwczovL2dvb2dsZXN5bmRpY2F0aW9uLmNvbTo0NDMiLCJmZWF0dXJlIjoiRmxlZGdlQmlkZGluZ0FuZEF1Y3Rpb25TZXJ2ZXIiLCJleHBpcnkiOjE3MzY4MTI4MDAsImlzU3ViZG9tYWluIjp0cnVlLCJpc1RoaXJkUGFydHkiOnRydWV9"><script src="https://securepubads.g.doubleclick.net/pagead/managed/js/gpt/m202501070101/pubads_impl.js" async=""></script><script async="" src="https://fundingchoicesmessages.google.com/i/154013155?ers=3"></script><script type="text/javascript" src="https://btloader.com/tag?o=5150306120761344&amp;upapi=true" async=""></script><script type="text/javascript" src="https://tags.crwdcntrl.net/lt/c/17138/sync.min.js" async="" id="lotameScript"></script><script src="https://config.aps.amazon-adsystem.com/configs/bd056b42-51db-43ce-9a8e-3b11319b5d1f" type="text/javascript" async="async"></script><script async="" src="https://fundingchoicesmessages.google.com/f/AGSKWxUcYu8olIX1nXTDbh6etoj9o0ZqXXaQHg97X67wC2TI3aBKFOMs19PDiGqNTUsWYymsWMmYNL2QopTabAY0ZK7a0miH75yad6PRuxGMvJ1L5XVbLsIJwMtSwZCdxbzAPtGUrA1zaw==?fccs=W251bGwsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLFsxNzM2Nzk4NjQ4LDUzNjAwMDAwMF0sbnVsbCxudWxsLG51bGwsW251bGwsWzddXSwiaHR0cHM6Ly9tb25rZXl0eXBlLmNvbS8iLG51bGwsW1s4LCJRZ0EtVWs0VlZVSSJdLFs5LCJlbi1VUyJdLFsxOSwiMiJdLFsxNywiWzBdIl1dXQ"></script><script esp-signal="true" src="https://invstatic101.creativecdn.com/encrypted-signals/encrypted-tag-g.js"></script><script esp-signal="true" src="https://oa.openxcdn.net/esp.js"></script><script esp-signal="true" src="https://static.criteo.net/js/ld/publishertag.ids.js"></script><script src="//secure.cdn.fastclick.net/js/pubcid/latest/pubcid.min.js"></script><script src="https://tags.crwdcntrl.net/lt/c/16576/sync.min.js"></script><script src="//cdn.id5-sync.com/api/1.0/id5-api.js"></script><script type="text/javascript" async="" src="https://secure.cdn.fastclick.net/js/cnvr-launcher/latest/launcher-stub.min.js"></script><script type="module" async="" src="https://cdn.btmessage.com/script/rlink.js?o=5150306120761344&amp;bt_env=prod" crossorigin="anonymous"></script><script async="" src="https://fundingchoicesmessages.google.com/f/AGSKWxW5QzPcKRHIYXxWeMMl5Yr1OpRZRlTFpnb5OLpnmnGnxVnoed03KxC5Ie-7whOrH_vCv3C1PLzMI5IkJ2QhjXS3hc38DLVvkts6HGCxWNVwAmP0NCFJw9nhzZmdeHJAQ4TOtqtaEg==?fccs=W251bGwsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLFsxNzM2Nzk4NjQ4LDgwNjAwMDAwMF0sbnVsbCxudWxsLG51bGwsW251bGwsWzcsOV0sbnVsbCwyLG51bGwsImVuIl0sImh0dHBzOi8vbW9ua2V5dHlwZS5jb20vIixudWxsLFtbOCwiUWdBLVVrNFZWVUkiXSxbOSwiZW4tVVMiXSxbMTksIjIiXSxbMTcsIlswXSJdXV0"></script><script type="text/javascript">!function(a,l,b,c,k,s,t,g,A){a.CustomerConnectAnalytics=k,a[k]=a[k]||function(){ (a[k].q=a[k].q||[]).push(arguments)},g=l.createElement(b),A=l.getElementsByTagName(b)[0],g.type="text/javascript",g.async=!0,g.src=c+"?id="+s+"&parentId="+t,A.parentNode.insertBefore(g,A) }(window,document,"script","//carbon-cdn.ccgateway.net/script","cca",window.location.hostname,"5bb3e20859");</script><script type="text/javascript" src="//imasdk.googleapis.com/js/sdkloader/ima3.js" async=""></script><style type="text/css" id="pwCSSstyling">.pw-tag { text-align: center; opacity: 1}.pw-oop-tag {width: 1px; height: 1px; line-height:1px; position: fixed}.pw-tag-hidden { visibility: hidden; opacity: 0}.pw-in-article { padding: 20px 0; }.pw-in-article--size-logic__container { padding: 20px 0; }.pw-in-article--size-logic__container .pw-in-article { padding: 0; }.pw-in-article--size-logic {max-height: 500px;overflow: hidden;position:relative;} .pw-standardIAB-tag { margin: 10px 0; padding-bottom: 10px!important;}.pw-standardIAB--size-logic {max-height: 400px;overflow: hidden;position: relative;} .pw-in-article--size-logic::-webkit-scrollbar {display: none;} .pw-in-article_hidden { visibility: hidden; height:0; }.pw-sticky { position: sticky; top: 0; padding: 0 }.pw-sticky-corner #pw-close-video-container { display: none!important} .pw-sticky-corner { margin: 10px auto!important; top: 0px; z-index: unset!important; }div.pw-loading-spinner {text-align:center;width:100%;position: absolute;top: 0;left: 0;height: 100%;display: flex;justify-content: center;align-items: center;}div.pw-loading-spinner-gif {height: 100px;width: 100px;background-image:url(https://cdn.intergi.com/tyche-assets/pw_loading_icon.gif);background-repeat: no-repeat;background-size: contain;}div.pw-ad-container-logo {margin: 0 5px 5px 0;}.pw-fixed-mobile-leaderboard{ position: fixed;bottom: 0px;left: 50%;width: 320px;height:50px;margin-left:-160px;z-index: 2147483645;text-align: center;padding: 2px 0;background: rgba(0, 0, 0, 0.8);transition: opacity .6s ease-in}.fixed-mobile-close { cursor: pointer;border-top: 1px solid rgba(0,0,0,0.35);border-left: 1px solid rgba(0,0,0,0.35);border-right: 1px solid rgba(0,0,0,0.35);border-radius: 4px 4px 0 0; padding: 3px 6px 3px 6px;position: absolute; top: -22px; right: -1px; z-index: -1;background-color: rgba(0,0,0,0.55);box-shadow: inset 0 0 0 1px rgba(255,255,255,0.2);color: rgba(255,255,255,0.75);line-height: 1.2;font-size: 12px;font-family: Helvetica,Arial,sans-serif;-webkit-transition: all .5s ease-out;-moz-transition: all .5s ease-out;-o-transition: all .5s ease-out;transition: all .5s ease-out;}.pw-siderail-left-close { cursor: pointer;border-top: 1px solid rgba(0,0,0,0.35);border-left: 1px solid rgba(0,0,0,0.35);border-right: 1px solid rgba(0,0,0,0.35);border-radius: 4px 4px 0 0; padding: 3px 6px 3px 6px; position: absolute;top: -22px; left: -1px; z-index: -1; background-color: rgba(0,0,0,0.55);box-shadow: inset 0 0 0 1px rgba(255,255,255,0.2);color: rgba(255,255,255,0.75);line-height: 1.2;font-size: 12px;font-family: Helvetica,Arial,sans-serif;-webkit-transition: all .5s ease-out;-moz-transition: all .5s ease-out;-o-transition: all .5s ease-out;transition: all .5s ease-out;}.pw-siderail-right-close { cursor: pointer;border-top: 1px solid rgba(0,0,0,0.35);border-left: 1px solid rgba(0,0,0,0.35);border-right: 1px solid rgba(0,0,0,0.35);border-radius: 4px 4px 0 0; padding: 3px 6px 3px 6px; position: absolute;top: -22px; right: -1px; z-index: -1; background-color: rgba(0,0,0,0.55);box-shadow: inset 0 0 0 1px rgba(255,255,255,0.2);color: rgba(255,255,255,0.75);line-height: 1.2;font-size: 12px;font-family: Helvetica,Arial,sans-serif;-webkit-transition: all .5s ease-out;-moz-transition: all .5s ease-out;-o-transition: all .5s ease-out;transition: all .5s ease-out;}div[data-pw-desk="leaderboard_atf"].pw-sticky,div[data-pw-mobi="leaderboard_atf"].pw-sticky { z-index: 2147483645;position: fixed; top:0px; left:0px; width: 100%; padding: 20px 0;background: rgba(0,0,0,.2);overflow:hidden;transition: 750ms opacity ease-out;opacity: 1;border-bottom: 1px solid rgba(238, 238, 238, 0.4)}div[data-pw-desk="med_rect_atf"].pw-sticky { z-index: 2147483644;position: fixed; width: 300px; padding: 0; background: transparent;overflow:hidden;transition: 750ms opacity ease-out;opacity: 1;border-bottom: 20px solid #fff;border-top: 20px solid #fff}.pws-sticky:before {z-index: -1;-webkit-filter: blur(34px);width: 100%;height: 100%;content: "";position: absolute;top: 0px;left: 0px;background: rgba(0,0,0,.5);}.pw-sticky-hide{opacity: 0%;}#pw-oop-behind_page { z-index: 0}#pw-oop-site_skin { z-index: 0}#pw-oop-above_page { z-index: 2147483647}#pw-oop-top_rail { top: 0px; left:0px}#pw-oop-left_rail, #pw-oop-left_rail2  { left: 0px; top: 0px; position: fixed; box-sizing: content-box;height:600px}#pw-oop-right_rail, #pw-oop-right_rail2 { right: 0px; top: 0px; position: fixed; box-sizing: content-box;height:600px}.pw-tps{ display: none }#pw-oop-left_rail2, #pw-oop-right_rail2 {opacity: 0; }#tycheConsole{ background-color: #fff; border-top: 1px solid;font-family: Arial, Helvetica, sans-serif; font-size: 12px;position: fixed; bottom: 0; width: 100%; padding: 0 2% 2% 2%;z-index: 9999999999; box-sizing: border-box}#tycheConsole a:visited{ color: rgb(52, 152, 219) }#tycheConsole li:hover{background: rgba(52, 152, 219,.26)}.ad__name{ display:inline-block; width: 15%; font-weight:bold;}div[data-pw-desk="leaderboard_atf"] > div > iframe { margin:auto; }#pw-oop-bottom_rail > div > iframe { margin:auto; }.pw_rail_push_hide {transform: translateY(-250%); transition: 2s; }.pw_rail_push_show { opacity: 1; animation: showDiv 1s forwards; }@keyframes showDiv { 0% {transform: translateY(1000%); } 100% { transform: translateY(0);  opacity: 1; } }#video_backfill {position: relative; top: 50%; transform: translateY(-50%); -ms-transform: translateY(-50%);z-index: 11}#video_backfill > .pw_report_ad_container { display: block}.pw-ad-container-hidden { background-image: none !important; }.pw-corner-ad-video.pw-hide {display: none}#pw-oop-bottom_rail.pw-tag.pointer-modifier {pointer-events: none; border-top: unset !important;}.pw-corner-ad-video-container {width: 100%;height:100%;max-height:100%}.pw-clearfix{clear:both}.pw-border-incontent-before { flex-grow: 1; margin-right: 10px; }.pw-border-incontent-after { flex-grow: 1; margin-left: 10px; } .pw-footer-container-incontent { display: flex; align-items: center; position: absolute; bottom: 0; width: 100%; height: 1px;}.pw-precontent-ad-video {background: rgba(0,0,0,0);position: relative;top: 0;left: 0;border-radius:8px;}#precontent_ad_video {left: 50%;transform: translate(-50%, 0);margin: 0!important}.pw-precontent-ad-video.pw-hide {display: none!important}.pw-precontent-ad-video-container {width: 100%;height:100%;max-height:100%}.pw-precontent-ad-video-loader {position: relative!important;border-radius:8px;}.pw-three-bounce,.pw-three-bounce:before,.pw-three-bounce:after {animation: load7 1.8s infinite ease-in-out;border-radius: 50%;height: 30px!important;-webkit-animation-fill-mode: both;animation-fill-mode: both;-webkit-animation: load7 1.8s infinite ease-in-out;width: 30px!important;}.pw-three-bounce {font-size: 10px;position: absolute!important;top: 50%;left: 50%;transform: translate(-50%, -50%);text-indent: -9999em;-webkit-transform: translateZ(0);-ms-transform: translateZ(0);transform: translateZ(0);-webkit-animation-delay: -0.16s;animation-delay: -0.16s;}.pw-three-bounce:before,.pw-three-bounce:after {content: "";position: absolute;top: 0;}.pw-three-bounce:before {left: -42px;-webkit-animation-delay: -0.32s;animation-delay: -0.32s;}.pw-three-bounce:after {left: 42px;}@-webkit-keyframes load7 {0%,80%,100% { box-shadow: 0 30px 0 -15px; }40% { box-shadow: 0 30px 0 0; }}@keyframes load7 {0%,80%,100% { box-shadow: 0 30px 0 -15px; }40% { box-shadow: 0 30px 0 0; }}.pw-rotating-plane {width: 40px;height: 40px;position: absolute!important;top: 50%;left: 50%;transform: translate(-50%, -50%);-webkit-animation: sk-rotateplane 1.2s infinite ease-in-out;animation: sk-rotateplane 1.2s infinite ease-in-out}@-webkit-keyframes sk-rotateplane {0% { -webkit-transform: perspective(120px) }50% { -webkit-transform: perspective(120px) rotateY(180deg) }100% { -webkit-transform: perspective(120px) rotateY(180deg)  rotateX(180deg) }}@keyframes sk-rotateplane {0% {transform: perspective(120px) rotateX(0deg) rotateY(0deg);-webkit-transform: perspective(120px) rotateX(0deg) rotateY(0deg)} 50% {transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg);-webkit-transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg)} 100% {transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);-webkit-transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);}}.pw-rectangle-bounce {width: 60px;height: 60px;text-align: center;font-size: 10px;position: absolute!important;top: 50%;left: 50%;transform: translate(-50%, -50%);}.pw-rectangle-bounce > div {height: 100%;width: 8px;margin-right: 4px;display: inline-block;-webkit-animation: stretchdelay 1.2s infinite ease-in-out;animation: stretchdelay 1.2s infinite ease-in-out;}.pw-rectangle-bounce #rect2 {-webkit-animation-delay: -1.1s;animation-delay: -1.1s;}.pw-rectangle-bounce #rect3 {-webkit-animation-delay: -1.0s;animation-delay: -1.0s;}.pw-rectangle-bounce #rect4 {-webkit-animation-delay: -0.9s;animation-delay: -0.9s;}.pw-rectangle-bounce #rect5 {-webkit-animation-delay: -0.8s;animation-delay: -0.8s;}@-webkit-keyframes stretchdelay {0%, 40%, 100% { -webkit-transform: scaleY(0.4) }20% { -webkit-transform: scaleY(1.0) }}@keyframes stretchdelay {0%, 40%, 100% {transform: scaleY(0.4);-webkit-transform: scaleY(0.4);}  20% {transform: scaleY(1.0);-webkit-transform: scaleY(1.0);}}.pw-hide-in-content-out-of-view {display: none; visibility: hidden}.pw-ignore-content-width-restrictions {overflow: visible!important}.playwire_report_ad_link {height: 20px;}#pw-oop-flex_container.gumgum-accommodate {height: 0! important; display: block! important;}#pw-oop-flex_container.gumgum-accommodate #pw-oop-flex, #pw-oop-flex_container.gumgum-accommodate #pw-oop-flex > div, #pw-oop-flex_container.gumgum-accommodate #pw-oop-flex > div > iframe {height: 0! important;}</style><script type="text/javascript" src="https://ps.eyeota.net/pixel?pid=m51mh00&amp;t=ajs&amp;uid=user_42bb86b4-13c6-4b1b-a0fc-1ab654849c8f_1736798649240" async="" defer=""></script><script async="" src="https://fundingchoicesmessages.google.com/f/AGSKWxWDqMKTymE7WkoxARQNnCHgVtobfMkibjWsEnP3Ywn2fqI45dZSmdjBm7yLtET7j4S7OwuqaeXU2ueZa_OmiYU8DpQpmM5evI-i4TSTaR527X4nz44Q9ee5mmozV-6l1wtouWYBOQ==?fccs=W251bGwsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLFsxNzM2Nzk4NjQ5LDgxMDAwMDAwMF0sbnVsbCxudWxsLG51bGwsW251bGwsWzcsOSw2XSxudWxsLDIsbnVsbCwiZW4iLG51bGwsbnVsbCxudWxsLG51bGwsbnVsbCwxXSwiaHR0cHM6Ly9tb25rZXl0eXBlLmNvbS8iLG51bGwsW1s4LCJRZ0EtVWs0VlZVSSJdLFs5LCJlbi1VUyJdLFsxOSwiMiJdLFsxNywiWzBdIl1dXQ"></script><script type="text/javascript" async="" defer="" src="https://d2qlq4kdetaeuz.cloudfront.net/eyewise-id-module/eyewise-module-consent.js?token=dGVzdHRva2VuOg=="></script><meta http-equiv="origin-trial" content="A3vKT9yxRPjmXN3DpIiz58f5JykcWHjUo/W7hvmtjgh9jPpQgem9VbADiNovG8NkO6mRmk70Kex8/KUqAYWVWAEAAACLeyJvcmlnaW4iOiJodHRwczovL2dvb2dsZXN5bmRpY2F0aW9uLmNvbTo0NDMiLCJmZWF0dXJlIjoiUHJpdmFjeVNhbmRib3hBZHNBUElzIiwiZXhwaXJ5IjoxNjk1MTY3OTk5LCJpc1N1YmRvbWFpbiI6dHJ1ZSwiaXNUaGlyZFBhcnR5Ijp0cnVlfQ=="><meta http-equiv="origin-trial" content="A7CQXglZzTrThjGTBEn1rWTxHOEtkWivwzgea+NjyardrwlieSjVuyG44PkYgIPGs8Q9svD8sF3Yedn0BBBjXAkAAACFeyJvcmlnaW4iOiJodHRwczovL2RvdWJsZWNsaWNrLm5ldDo0NDMiLCJmZWF0dXJlIjoiUHJpdmFjeVNhbmRib3hBZHNBUElzIiwiZXhwaXJ5IjoxNjk1MTY3OTk5LCJpc1N1YmRvbWFpbiI6dHJ1ZSwiaXNUaGlyZFBhcnR5Ijp0cnVlfQ=="></head>
+  
+  
+    <body class="darkMode" style="transition: background 0.25s ease 0s, transform 0.05s ease 0s; cursor: default;" aria-hidden="false">
+      <div id="mediaQueryDebug"></div>
+      <noscript>
+    <div
+      style="
+        background: #333;
+        width: 100vw;
+        height: 100vh;
+        left: 0;
+        top: 0;
+        position: fixed;
+        display: grid;
+        justify-content: center;
+        align-content: center;
+        color: #646669;
+        font-size: 1rem;
+        font-family: Arial Rounded MT Bold;
+        z-index: 99999;
+        padding: 6rem;
+        box-sizing: border-box;
+      "
+    >
+      <div
+        style="
+          display: grid;
+          justify-content: center;
+          align-content: center;
+          max-width: 800px;
+          gap: 1rem;
+        "
+      >
+        <span style="font-size: 6rem; color: #e2b714">:(</span>
+        <span style="font-size: 2rem; color: #d1d0c5">
+          Looks like JavaScript is disabled. Please enable JavaScript in order to
+          use this website.
+        </span>
+      </div>
+    </div>
+  </noscript>
+  <div id="nocss" style="
+      background: #333;
+      width: 100vw;
+      height: 100vh;
+      left: 0;
+      top: 0;
+      position: fixed;
+      display: grid;
+      justify-content: center;
+      align-content: center;
+      color: #646669;
+      font-size: 1rem;
+      font-family: Arial Rounded MT Bold;
+      z-index: 99999;
+      padding: 6rem;
+      box-sizing: border-box;
+      overflow-y: scroll;
+    ">
+    <style>
+      .noCssReinstallServiceWorker {
+        margin-top: 1rem;
+        padding: 1rem;
+        display: inline-block;
+        border-radius: 1rem;
+        background: #2c2e31;
+        transition: 0.125s;
+      }
+      .noCssReinstallServiceWorker:hover {
+        background: #d1d0c5;
+        color: #333;
+        cursor: pointer;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+             user-select: none;
+      }
+      .noCssReinstallServiceWorker:active {
+        background: #646669;
+      }
+    </style>
+    <script>
+      function reinstallServiceWorker() {
+        navigator.serviceWorker.getRegistrations().then(function (registrations) {
+          for (let registration of registrations) {
+            registration.unregister();
+          }
+          caches.keys().then((cacheNames) => {
+            for (let cacheName of cacheNames) {
+              caches.delete(cacheName);
+            }
+          });
+        });
+        setTimeout(function () {
+          window.location.reload();
+        }, 500);
+      }
+    </script>
+    <div style="
+        display: grid;
+        justify-content: center;
+        align-content: center;
+        max-width: 800px;
+        gap: 1rem;
+      ">
+      <span style="font-size: 6rem; color: #e2b714">:(</span>
+      <span style="font-size: 1.5rem; color: #d1d0c5">
+        It seems like the CSS failed to load. Please try clearing your cache to
+        redownload the styles:
+        <br>
+        <span class="keys">
+      <span style="
+          padding: 1rem;
+          display: inline-block;
+          border-radius: 1rem;
+          background: #2c2e31;
+          margin-bottom: 1rem;
+        ">
+        Ctrl
+      </span>
+      +
+      <span style="
+          padding: 1rem;
+          display: inline-block;
+          border-radius: 1rem;
+          background: #2c2e31;
+        ">
+        Shift
+      </span>
+      +
+      <span style="
+          padding: 1rem;
+          display: inline-block;
+          border-radius: 1rem;
+          background: #2c2e31;
+        ">
+        R
+      </span>
+    </span>
+        <br>
+        You could also try to reinstall the service worker:
+        <br>
+        <span class="noCssReinstallServiceWorker" onclick="reinstallServiceWorker()" style="margin-bottom: 1rem">
+          Reinstall
+        </span>
+        <br>
+        Various dark mode extensions are also known to cause this issue.
+      </span>
+      <span>
+        If that doesn't help contact support (support@monkeytype.com or
+        discord.gg/monkeytype)
+      </span>
+      <span class="requestedStylesheets">Requested stylesheets:<br></span>
+      <span class="requestedJs">Requested Javascript files:<br>https://monkeytype.com/js/monkeytype.CvgOqDDv.js<br><br>Client version:<br>2025.01.13_12.16.10510d236</span>
+    </div>
+  </div>
+  
+      <div id="fpsCounter" class="hidden"></div>
+      <div class="customBackground"></div>
+      <div id="backgroundLoader" style="display: none"></div>
+      <div id="bannerCenter" class=""></div>
+      <div id="notificationCenter" class="" style="margin-top: 0px;">
+        <div class="clearAll button invisible" style="display: none">
+          <i class="fas fa-times"></i>
+          Clear all
+        </div>
+        <div class="history" style="margin-top: 0px;">
+  
+                    
+  
+                
+  
+            
+  
+            
+  
+                    
+  
+                
+  
+            
+  
+            
+  
+                    
+  
+                
+  
+            
+  
+            </div>
+      </div>
+      <div id="barTimerProgress" class="timerMain" style="opacity: 1;">
+        <div class="opacityWrapper" style="opacity: 0">
+          <div class="bar" style="width: 0vw;"></div>
+        </div>
+      </div>
+      <div id="popups">
+        
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <dialog id="shareTestSettingsModal" class="modalWrapper hidden">
+    <!-- <div id="shareTestSettingsPopup"> -->
+    <div class="modal">
+      <div class="title">Share test settings</div>
+      <label class="checkboxWithSub mode">
+        <input type="checkbox" setting="mode">
+        <div>Mode</div>
+        <div class="sub">Time, Words, Quote, Zen, Custom</div>
+      </label>
+      <label class="checkboxWithSub mode2 subgroup hidden">
+        <input type="checkbox" setting="mode2">
+        <div>Mode2</div>
+        <div class="sub">Test seconds, Test words, Quote Id</div>
+      </label>
+      <label class="checkbox customText subgroup hidden">
+        <input type="checkbox" setting="customText">
+        Custom text
+        <span></span>
+      </label>
+      <label class="checkbox punctuation">
+        <input type="checkbox" setting="punctuation">
+        Punctuation
+        <span></span>
+      </label>
+      <label class="checkbox numbers">
+        <input type="checkbox" setting="numbers">
+        Numbers
+        <span></span>
+      </label>
+      <label class="checkbox language">
+        <input type="checkbox" setting="language">
+        Language
+        <span></span>
+      </label>
+      <label class="checkbox difficulty">
+        <input type="checkbox" setting="difficulty">
+        Difficulty
+        <span></span>
+      </label>
+      <label class="checkbox funbox">
+        <input type="checkbox" setting="funbox">
+        Funbox
+        <span></span>
+      </label>
+      <textarea class="url" placeholder="url" value="monkeytype.com" readonly=""></textarea>
+      <div class="tooLongWarning hidden">
+        <i class="fas fa-fw fa-exclamation-triangle"></i>
+        <span>The URL is over 2000 characters long - it might not work</span>
+      </div>
+      <!-- </div> -->
+    </div>
+  </dialog>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+      </div>
+      <!-- <div id="div-gpt-ad-mkt-0" style="height: 100vh"></div> -->
+      <div id="app" class="content-grid" style="opacity: 1; padding-top: 32px;">
+        <header class="">
+    <a id="logo" href="/" router-link="">
+      <div class="icon">
+        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="isolation: isolate" viewBox="-680 -1030 300 180">
+          <g>
+            <path d="M -430 -910 L -430 -910 C -424.481 -910 -420 -905.519 -420 -900 L -420 -900 C -420 -894.481 -424.481 -890 -430 -890 L -430 -890 C -435.519 -890 -440 -894.481 -440 -900 L -440 -900 C -440 -905.519 -435.519 -910 -430 -910 Z"></path>
+            <path d=" M -570 -910 L -510 -910 C -504.481 -910 -500 -905.519 -500 -900 L -500 -900 C -500 -894.481 -504.481 -890 -510 -890 L -570 -890 C -575.519 -890 -580 -894.481 -580 -900 L -580 -900 C -580 -905.519 -575.519 -910 -570 -910 Z "></path>
+            <path d="M -590 -970 L -590 -970 C -584.481 -970 -580 -965.519 -580 -960 L -580 -940 C -580 -934.481 -584.481 -930 -590 -930 L -590 -930 C -595.519 -930 -600 -934.481 -600 -940 L -600 -960 C -600 -965.519 -595.519 -970 -590 -970 Z"></path>
+            <path d=" M -639.991 -960.515 C -639.72 -976.836 -626.385 -990 -610 -990 L -610 -990 C -602.32 -990 -595.31 -987.108 -590 -982.355 C -584.69 -987.108 -577.68 -990 -570 -990 L -570 -990 C -553.615 -990 -540.28 -976.836 -540.009 -960.515 C -540.001 -960.345 -540 -960.172 -540 -960 L -540 -960 L -540 -940 C -540 -934.481 -544.481 -930 -550 -930 L -550 -930 C -555.519 -930 -560 -934.481 -560 -940 L -560 -960 L -560 -960 C -560 -965.519 -564.481 -970 -570 -970 C -575.519 -970 -580 -965.519 -580 -960 L -580 -960 L -580 -960 L -580 -940 C -580 -934.481 -584.481 -930 -590 -930 L -590 -930 C -595.519 -930 -600 -934.481 -600 -940 L -600 -960 L -600 -960 L -600 -960 L -600 -960 L -600 -960 L -600 -960 L -600 -960 L -600 -960 C -600 -965.519 -604.481 -970 -610 -970 C -615.519 -970 -620 -965.519 -620 -960 L -620 -960 L -620 -940 C -620 -934.481 -624.481 -930 -630 -930 L -630 -930 C -635.519 -930 -640 -934.481 -640 -940 L -640 -960 L -640 -960 C -640 -960.172 -639.996 -960.344 -639.991 -960.515 Z "></path>
+            <path d=" M -460 -930 L -460 -900 C -460 -894.481 -464.481 -890 -470 -890 L -470 -890 C -475.519 -890 -480 -894.481 -480 -900 L -480 -930 L -508.82 -930 C -514.99 -930 -520 -934.481 -520 -940 L -520 -940 C -520 -945.519 -514.99 -950 -508.82 -950 L -431.18 -950 C -425.01 -950 -420 -945.519 -420 -940 L -420 -940 C -420 -934.481 -425.01 -930 -431.18 -930 L -460 -930 Z "></path>
+            <path d="M -470 -990 L -430 -990 C -424.481 -990 -420 -985.519 -420 -980 L -420 -980 C -420 -974.481 -424.481 -970 -430 -970 L -470 -970 C -475.519 -970 -480 -974.481 -480 -980 L -480 -980 C -480 -985.519 -475.519 -990 -470 -990 Z"></path>
+            <path d=" M -630 -910 L -610 -910 C -604.481 -910 -600 -905.519 -600 -900 L -600 -900 C -600 -894.481 -604.481 -890 -610 -890 L -630 -890 C -635.519 -890 -640 -894.481 -640 -900 L -640 -900 C -640 -905.519 -635.519 -910 -630 -910 Z "></path>
+            <path d=" M -515 -990 L -510 -990 C -504.481 -990 -500 -985.519 -500 -980 L -500 -980 C -500 -974.481 -504.481 -970 -510 -970 L -515 -970 C -520.519 -970 -525 -974.481 -525 -980 L -525 -980 C -525 -985.519 -520.519 -990 -515 -990 Z "></path>
+            <path d=" M -660 -910 L -680 -910 L -680 -980 C -680 -1007.596 -657.596 -1030 -630 -1030 L -430 -1030 C -402.404 -1030 -380 -1007.596 -380 -980 L -380 -900 C -380 -872.404 -402.404 -850 -430 -850 L -630 -850 C -657.596 -850 -680 -872.404 -680 -900 L -680 -920 L -660 -920 L -660 -900 C -660 -883.443 -646.557 -870 -630 -870 L -430 -870 C -413.443 -870 -400 -883.443 -400 -900 L -400 -980 C -400 -996.557 -413.443 -1010 -430 -1010 L -630 -1010 C -646.557 -1010 -660 -996.557 -660 -980 L -660 -910 Z "></path>
+          </g>
+        </svg>
+      </div>
+      <h1 class="text">
+        <div class="top">monkey see</div>
+        monkeytype
+      </h1>
+    </a>
+    <nav>
+      <a id="startTestButton" class="textButton view-start" href="/" onclick="this.blur();" router-link="" title="start test">
+        <div class="icon">
+          <i class="fas fa-fw fa-keyboard"></i>
+        </div>
+      </a>
+      <button class="textButton leaderboards view-leaderboards" onclick="this.blur();" title="leaderboard">
+        <div class="icon">
+          <i class="fas fa-fw fa-crown"></i>
+        </div>
+      </button>
+      <a class="textButton view-about" href="/about" onclick="this.blur();" router-link="" title="about">
+        <div class="icon">
+          <i class="fas fa-fw fa-info"></i>
+        </div>
+      </a>
+      <!-- <a
+        class="textButton discord"
+        href="https://discord.gg/yENzqcB"
+        onclick="this.blur();"
+        target="_blank"
+        style="text-decoration: none;"
+      >
+        <div class="icon">
+          <i class="fab fa-discord"></i>
+        </div>
+      </a> -->
+      <a class="textButton view-settings" href="/settings" onclick="this.blur();" router-link="" title="settings">
+        <div class="icon">
+          <i class="fas fa-fw fa-cog"></i>
+        </div>
+      </a>
+      <div></div>
+      <button class="text showAlerts" onclick="this.blur();">
+        <div class="icon">
+          <i class="fas fa-fw fa-bell"></i>
+        </div>
+        <div class="notificationBubble hidden">5</div>
+      </button>
+      <a class="textButton view-login" href="/login" onclick="this.blur();" router-link="">
+        <i class="far fa-fw fa-user"></i>
+      </a>
+      <div class="accountButtonAndMenu hidden">
+        <a class="textButton view-account" href="/account" onclick="this.blur();" router-link="">
+          <div class="loading hidden" style="opacity: 0;">
+            <i class="fas fa-fw fa-spin fa-circle-notch"></i>
+          </div>
+          <div class="user" style="opacity: 1;">
+            <i class="fas fa-fw fa-user"></i>
+          </div>
+          <div class="avatar hidden"></div>
+          <div class="text"></div>
+          <div class="levelAndBar">
+            <div class="level" data-balloon-pos="up">1</div>
+            <div class="xpBar">
+              <div class="bar"></div>
+              <div class="xpBreakdown">
+                <div class="total"></div>
+                <!-- <div class="divider"></div> -->
+                <div class="list"></div>
+              </div>
+            </div>
+          </div>
+        </a>
+        <div class="menu">
+          <div class="spacer"></div>
+          <div class="items">
+            <a href="/account" class="button" onclick="this.blur();" router-link="">
+              <i class="fas fa-fw fa-chart-line"></i>
+              User stats
+            </a>
+            <a href="/404" class="button goToProfile" onclick="this.blur();" router-link="">
+              <i class="fas fa-fw fa-globe-americas"></i>
+              Public profile
+            </a>
+            <a href="/account-settings" class="button" onclick="this.blur();" router-link="">
+              <i class="fas fa-fw fa-cog"></i>
+              Account settings
+            </a>
+            <button class="signOut" onclick="this.blur();">
+              <i class="fas fa-fw fa-sign-out-alt"></i>
+              Sign out
+            </button>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+  
+        <main class="full-width content-grid" style="height: 100%">
+          
+          
+          
+  
+          
+  
+          
+  
+          
+  
+          
+  
+          
+  
+  
+  
+          <div class="page pageTest full-width content-grid active" style="opacity: 1;">
+    <div id="testConfig" class="full-width">
+      <div class="row">
+        <div class="puncAndNum hidden" style="width: 0px; opacity: 0;">
+          <button class="textButton punctuationMode">
+            <i class="fas fa-fw fa-at"></i>
+            punctuation
+          </button>
+          <button class="textButton numbersMode">
+            <i class="fas fa-fw fa-hashtag"></i>
+            numbers
+          </button>
+        </div>
+  
+        <div class="spacer leftSpacer scrolled"></div>
+  
+        <div class="mode">
+          <button class="textButton" mode="time">
+            <i class="fas fa-fw fa-clock"></i>
+            time
+          </button>
+          <button class="textButton" mode="words">
+            <i class="fas fa-fw fa-font"></i>
+            words
+          </button>
+          <button class="textButton active" mode="quote">
+            <i class="fas fa-fw fa-quote-left"></i>
+            quote
+          </button>
+          <button class="textButton" mode="zen">
+            <i class="fas fa-fw fa-mountain"></i>
+            zen
+          </button>
+          <button class="textButton" mode="custom">
+            <i class="fas fa-fw fa-wrench"></i>
+            custom
+          </button>
+        </div>
+  
+        <div class="spacer rightSpacer"></div>
+  
+        <div class="time hidden" style="opacity: 1; width: unset;">
+          <button class="textButton" timeconfig="15"><span>15</span></button>
+          <button class="textButton active" timeconfig="30"><span>30</span></button>
+          <button class="textButton" timeconfig="60"><span>60</span></button>
+          <button class="textButton" timeconfig="120"><span>120</span></button>
+          <button class="textButton" timeconfig="custom">
+            <i class="fas fa-fw fa-tools"></i>
+          </button>
+        </div>
+  
+        <div class="wordCount hidden" style="opacity: 1; width: unset;">
+          <button class="textButton" wordcount="10"><span>10</span></button>
+          <button class="textButton" wordcount="25"><span>25</span></button>
+          <button class="textButton active" wordcount="50"><span>50</span></button>
+          <button class="textButton" wordcount="100"><span>100</span></button>
+          <button class="textButton" wordcount="custom">
+            <i class="fas fa-fw fa-tools"></i>
+          </button>
+        </div>
+  
+        <div class="quoteLength" style="opacity: 1; width: unset;">
+          <button class="textButton" quotelength="-1">all</button>
+          <button class="textButton" quotelength="0">short</button>
+          <button class="textButton" quotelength="1">medium</button>
+          <button class="textButton" quotelength="2">long</button>
+          <button class="textButton active" quotelength="3">thicc</button>
+          <button class="textButton favorite hidden" quotelength="-3">
+            <i class="fas fa-heart"></i>
+          </button>
+          <button class="textButton" quotelength="-2">
+            <i class="fas fa-search"></i>
+          </button>
+        </div>
+  
+        <div class="zen hidden">
+          <div class="textButton" style="
+              width: 0;
+              padding-left: 0;
+              padding-right: 0;
+              margin-left: 0;
+              margin-right: 0;
+            ">
+             
+          </div>
+        </div>
+  
+        <div class="customText hidden">
+          <button class="textButton">change</button>
+        </div>
+      </div>
+    </div>
+    <div id="mobileTestConfigButton" class="">
+      <button>
+        <i class="fas fa-fw fa-cog"></i>
+        Test settings
+      </button>
+    </div>
+    <div id="typingTest" class="content-grid content" style="font-size: 2rem; max-width: 100%; opacity: 1;">
+      <div id="capsWarning" class="hidden">
+        <i class="fas fa-lock"></i>
+        Caps Lock
+      </div>
+      <div id="memoryTimer" style="opacity: 0;">Time left to memorise all words: 0s</div>
+      <div id="layoutfluidTimer" style="opacity: 0;">Time left to memorise all words: 0s</div>
+      <div id="testModesNotice"><button class="textButton" commands="languages"><i class="fas fa-globe-americas"></i>english</button></div>
+      <div id="liveStatsTextTop" class="timerMain" style="opacity: 1;">
+        <div class="wrapper">
+          <div class="timerProgress hidden" style="opacity: 0;">0</div>
+        </div>
+      </div>
+      <div id="liveStatsMini" class="full-width timerMain" style="font-size: 2rem; opacity: 1; justify-content: start; margin-left: 0.25em;">
+        <div class="time hidden" style="opacity: 0;">0</div>
+        <div class="speed hidden">0</div>
+        <div class="acc hidden">100%</div>
+        <div class="burst hidden">0</div>
+      </div>
+      <div id="wordsWrapper" class="content-grid full-width" translate="no" style="overflow: visible clip; height: 153px;">
+        <input id="wordsInput" class="full-width" type="text" autocomplete="off" autocapitalize="off" autocorrect="off" data-gramm="false" data-gramm_editor="false" data-enable-grammarly="false" list="autocompleteOff" spellcheck="false" style="font-size: 2rem; width: 32px; top: 61px; left: 10px;">
+        <div class="outOfFocusWarning" style="margin-top: 68.5px;">
+          <i class="fas fa-fw fa-mouse-pointer"></i>
+          Click here or press any key to focus
+        </div>
+        <div id="paceCaret" class="full-width hidden default" style="font-size: 2rem; top: -51.3333px;"></div>
+        <div id="caret" class="full-width default hidden" style="animation-name: caretFlashSmooth; opacity: 1; font-size: 2rem; display: block; top: 24.5px; left: 10px;"></div>
+        <div id="words" class="full-width highlight-letter blurred" style="margin-left: unset; overflow: visible clip; height: 204px; transition: all 0.25s ease 0s;"><div class="word active"><letter>I</letter></div><div class="word"><letter>s</letter><letter>h</letter><letter>o</letter><letter>u</letter><letter>l</letter><letter>d</letter></div><div class="word"><letter>h</letter><letter>a</letter><letter>v</letter><letter>e</letter></div><div class="word"><letter>d</letter><letter>i</letter><letter>e</letter><letter>d</letter></div><div class="word"><letter>t</letter><letter>h</letter><letter>a</letter><letter>t</letter></div><div class="word"><letter>d</letter><letter>a</letter><letter>y</letter><letter>.</letter></div><div class="word"><letter>B</letter><letter>u</letter><letter>t</letter></div><div class="word"><letter>I</letter></div><div class="word"><letter>d</letter><letter>i</letter><letter>d</letter><letter>n</letter><letter>'</letter><letter>t</letter><letter>.</letter></div><div class="word"><letter>I</letter></div><div class="word"><letter>d</letter><letter>r</letter><letter>a</letter><letter>g</letter><letter>g</letter><letter>e</letter><letter>d</letter></div><div class="word"><letter>m</letter><letter>y</letter></div><div class="word"><letter>w</letter><letter>o</letter><letter>u</letter><letter>n</letter><letter>d</letter><letter>e</letter><letter>d</letter></div><div class="word"><letter>b</letter><letter>o</letter><letter>d</letter><letter>y</letter></div><div class="word"><letter>a</letter><letter>n</letter><letter>d</letter></div><div class="word"><letter>r</letter><letter>e</letter><letter>a</letter><letter>c</letter><letter>h</letter><letter>e</letter><letter>d</letter></div><div class="word"><letter>g</letter><letter>r</letter><letter>o</letter><letter>u</letter><letter>n</letter><letter>d</letter></div><div class="word"><letter>z</letter><letter>e</letter><letter>r</letter><letter>o</letter></div><div class="word"><letter>o</letter><letter>f</letter></div><div class="word"><letter>t</letter><letter>h</letter><letter>e</letter></div><div class="word"><letter>n</letter><letter>u</letter><letter>c</letter><letter>l</letter><letter>e</letter><letter>a</letter><letter>r</letter></div><div class="word"><letter>d</letter><letter>e</letter><letter>t</letter><letter>o</letter><letter>n</letter><letter>a</letter><letter>t</letter><letter>i</letter><letter>o</letter><letter>n</letter><letter>s</letter><letter>.</letter></div><div class="word"><letter>A</letter></div><div class="word"><letter>b</letter><letter>a</letter><letter>r</letter><letter>r</letter><letter>e</letter><letter>n</letter><letter>,</letter></div><div class="word"><letter>e</letter><letter>m</letter><letter>p</letter><letter>t</letter><letter>y</letter></div><div class="word"><letter>l</letter><letter>a</letter><letter>n</letter><letter>d</letter><letter>.</letter></div><div class="word"><letter>I</letter></div><div class="word"><letter>f</letter><letter>e</letter><letter>l</letter><letter>t</letter></div><div class="word"><letter>a</letter><letter>n</letter></div><div class="word"><letter>u</letter><letter>n</letter><letter>b</letter><letter>e</letter><letter>a</letter><letter>r</letter><letter>a</letter><letter>b</letter><letter>l</letter><letter>e</letter></div><div class="word"><letter>s</letter><letter>a</letter><letter>d</letter><letter>n</letter><letter>e</letter><letter>s</letter><letter>s</letter></div><div class="word"><letter>w</letter><letter>h</letter><letter>e</letter><letter>n</letter></div><div class="word"><letter>I</letter></div><div class="word"><letter>w</letter><letter>i</letter><letter>t</letter><letter>n</letter><letter>e</letter><letter>s</letter><letter>s</letter><letter>e</letter><letter>d</letter></div><div class="word"><letter>t</letter><letter>h</letter><letter>a</letter><letter>t</letter></div><div class="word"><letter>l</letter><letter>a</letter><letter>n</letter><letter>d</letter><letter>s</letter><letter>c</letter><letter>a</letter><letter>p</letter><letter>e</letter><letter>.</letter></div><div class="word"><letter>T</letter><letter>h</letter><letter>e</letter><letter>r</letter><letter>e</letter></div><div class="word"><letter>w</letter><letter>e</letter><letter>r</letter><letter>e</letter></div><div class="word"><letter>s</letter><letter>t</letter><letter>i</letter><letter>l</letter><letter>l</letter></div><div class="word"><letter>p</letter><letter>e</letter><letter>o</letter><letter>p</letter><letter>l</letter><letter>e</letter></div><div class="word"><letter>l</letter><letter>i</letter><letter>v</letter><letter>i</letter><letter>n</letter><letter>g</letter></div><div class="word"><letter>t</letter><letter>h</letter><letter>e</letter><letter>r</letter><letter>e</letter><letter>.</letter></div><div class="word"><letter>T</letter><letter>h</letter><letter>e</letter><letter>y</letter></div><div class="word"><letter>w</letter><letter>e</letter><letter>r</letter><letter>e</letter></div><div class="word"><letter>t</letter><letter>h</letter><letter>e</letter></div><div class="word"><letter>o</letter><letter>n</letter><letter>e</letter><letter>s</letter></div><div class="word"><letter>t</letter><letter>h</letter><letter>a</letter><letter>t</letter></div><div class="word"><letter>s</letter><letter>a</letter><letter>v</letter><letter>e</letter><letter>d</letter></div><div class="word"><letter>m</letter><letter>e</letter><letter>.</letter></div><div class="word"><letter>I</letter><letter>t</letter></div><div class="word"><letter>m</letter><letter>a</letter><letter>y</letter></div><div class="word"><letter>b</letter><letter>e</letter></div><div class="word"><letter>t</letter><letter>r</letter><letter>u</letter><letter>e</letter></div><div class="word"><letter>t</letter><letter>h</letter><letter>a</letter><letter>t</letter></div><div class="word"><letter>t</letter><letter>h</letter><letter>e</letter></div><div class="word"><letter>w</letter><letter>o</letter><letter>r</letter><letter>l</letter><letter>d</letter></div><div class="word"><letter>h</letter><letter>a</letter><letter>s</letter></div><div class="word"><letter>n</letter><letter>o</letter></div><div class="word"><letter>n</letter><letter>e</letter><letter>e</letter><letter>d</letter></div><div class="word"><letter>o</letter><letter>f</letter></div><div class="word"><letter>b</letter><letter>o</letter><letter>r</letter><letter>d</letter><letter>e</letter><letter>r</letter><letter>s</letter><letter>.</letter></div><div class="word"><letter>B</letter><letter>u</letter><letter>t</letter></div><div class="word"><letter>w</letter><letter>o</letter><letter>u</letter><letter>l</letter><letter>d</letter></div><div class="word"><letter>g</letter><letter>e</letter><letter>t</letter><letter>t</letter><letter>i</letter><letter>n</letter><letter>g</letter></div><div class="word"><letter>r</letter><letter>i</letter><letter>d</letter></div><div class="word"><letter>o</letter><letter>f</letter></div><div class="word"><letter>t</letter><letter>h</letter><letter>e</letter><letter>m</letter></div><div class="word"><letter>r</letter><letter>e</letter><letter>a</letter><letter>l</letter><letter>l</letter><letter>y</letter></div><div class="word"><letter>c</letter><letter>h</letter><letter>a</letter><letter>n</letter><letter>g</letter><letter>e</letter></div><div class="word"><letter>a</letter><letter>n</letter><letter>y</letter><letter>t</letter><letter>h</letter><letter>i</letter><letter>n</letter><letter>g</letter><letter>?</letter></div><div class="word"><letter>T</letter><letter>h</letter><letter>e</letter></div><div class="word"><letter>w</letter><letter>o</letter><letter>r</letter><letter>l</letter><letter>d</letter></div><div class="word"><letter>w</letter><letter>o</letter><letter>n</letter><letter>'</letter><letter>t</letter></div><div class="word"><letter>c</letter><letter>h</letter><letter>a</letter><letter>n</letter><letter>g</letter><letter>e</letter></div><div class="word"><letter>f</letter><letter>o</letter><letter>r</letter></div><div class="word"><letter>t</letter><letter>h</letter><letter>e</letter></div><div class="word"><letter>b</letter><letter>e</letter><letter>t</letter><letter>t</letter><letter>e</letter><letter>r</letter></div><div class="word"><letter>u</letter><letter>n</letter><letter>l</letter><letter>e</letter><letter>s</letter><letter>s</letter></div><div class="word"><letter>w</letter><letter>e</letter></div><div class="word"><letter>t</letter><letter>r</letter><letter>u</letter><letter>s</letter><letter>t</letter></div><div class="word"><letter>p</letter><letter>e</letter><letter>o</letter><letter>p</letter><letter>l</letter><letter>e</letter><letter>.</letter></div><div class="word"><letter>T</letter><letter>r</letter><letter>u</letter><letter>s</letter><letter>t</letter></div><div class="word"><letter>i</letter><letter>s</letter></div><div class="word"><letter>v</letter><letter>i</letter><letter>t</letter><letter>a</letter><letter>l</letter></div><div class="word"><letter>i</letter><letter>n</letter></div><div class="word"><letter>a</letter></div><div class="word"><letter>p</letter><letter>e</letter><letter>a</letter><letter>c</letter><letter>e</letter><letter>f</letter><letter>u</letter><letter>l</letter></div><div class="word"><letter>w</letter><letter>o</letter><letter>r</letter><letter>l</letter><letter>d</letter><letter>.</letter></div><div class="word"><letter>B</letter><letter>u</letter><letter>t</letter></div><div class="word"><letter>t</letter><letter>h</letter><letter>a</letter><letter>t</letter></div><div class="word"><letter>w</letter><letter>i</letter><letter>l</letter><letter>l</letter></div><div class="word"><letter>n</letter><letter>e</letter><letter>v</letter><letter>e</letter><letter>r</letter></div><div class="word"><letter>h</letter><letter>a</letter><letter>p</letter><letter>p</letter><letter>e</letter><letter>n</letter><letter>.</letter></div><div class="word"><letter>I</letter><letter>'</letter><letter>m</letter></div><div class="word"><letter>s</letter><letter>t</letter><letter>i</letter><letter>l</letter><letter>l</letter></div><div class="word"><letter>o</letter><letter>n</letter></div><div class="word"><letter>t</letter><letter>h</letter><letter>e</letter></div><div class="word"><letter>b</letter><letter>a</letter><letter>t</letter><letter>t</letter><letter>l</letter><letter>e</letter><letter>f</letter><letter>i</letter><letter>e</letter><letter>l</letter><letter>d</letter><letter>.</letter></div><div class="word"><letter>R</letter><letter>i</letter><letter>g</letter><letter>h</letter><letter>t</letter></div><div class="word"><letter>n</letter><letter>o</letter><letter>w</letter></div></div>
+      </div>
+  
+      <div id="koInputVisualContainer" style="display: none; transition: all 0.25s ease 0s;" class="blurred">
+        <div id="koInputVisual" aria-label="Korean Input Visual" class=""></div>
+      </div>
+  
+      <div id="keymap" class="hidden" style="zoom: 1;"></div>
+  
+      <button id="restartTestButton" aria-label="Restart Test" data-balloon-pos="down" class="text">
+        <i class="fas fa-fw fa-redo-alt"></i>
+      </button>
+      <div id="liveStatsTextBottom" class="timerMain" style="opacity: 1;">
+        <div class="wrapper">
+          <div class="liveSpeed hidden">0</div>
+          <div class="liveAcc hidden">100%</div>
+          <div class="liveBurst hidden">0</div>
+        </div>
+      </div>
+      <div id="monkey" class="hidden" style="opacity: 1; animation-duration: 0s;">
+        <div class="up"></div>
+        <div class="left hidden"></div>
+        <div class="right hidden"></div>
+        <div class="both hidden"></div>
+        <div class="fast" style="opacity: 0;">
+          <div class="up"></div>
+          <div class="left hidden"></div>
+          <div class="right hidden"></div>
+          <div class="both hidden"></div>
+        </div>
+      </div>
+      <div id="premidTestMode" class="hidden">quote 2689 english</div>
+      <div id="premidSecondsLeft" class="hidden">30</div>
+    </div>
+    <div id="result" class="content-grid full-width hidden" tabindex="-1" style="opacity: 0;">
+      <div class="wrapper">
+        <div class="stats">
+          <!-- <div class="info">words 10<br>punctuation</div> -->
+  
+          <div class="group wpm">
+            <div class="top">
+              <div class="text">wpm</div>
+              <div class="crown hidden" aria-label="" data-balloon-pos="up" data-balloon-length="" style="opacity: 0;">
+                <i class="fas fa-question"></i>
+                <i class="fas fa-crown"></i>
+                <i class="fas fa-slash"></i>
+                <i class="fas fa-exclamation-triangle"></i>
+              </div>
+            </div>
+            <div class="bottom" aria-label="1048.72 wpm" data-balloon-pos="up">Infinite</div>
+          </div>
+          <div class="group acc">
+            <div class="top">acc</div>
+            <div class="bottom" aria-label="100%
+  334 correct
+  0 incorrect" data-balloon-pos="up" data-balloon-break="">100%</div>
+          </div>
+        </div>
+        <div class="stats morestats">
+          <div class="group testType">
+            <div class="top">test type</div>
+            <div class="bottom">quote long<br>english</div>
+            <div class="tags hidden" style="margin-top: 0.5rem">
+              <div class="top">
+                <span>tags</span>
+                <div class="textButton editTagsButton invisible" result-id="" active-tag-ids="" aria-label="Edit tags" role="button" data-balloon-pos="right" data-result-id="" data-active-tag-ids="">
+                  <i class="fas fa-pen fa-fw"></i>
+                </div>
+              </div>
+              <div class="bottom"><div class="noTags">no tags</div></div>
+            </div>
+          </div>
+          <!-- <div class="group infoAndTags"> -->
+          <div class="group info">
+            <div class="top">other</div>
+            <div class="bottom">invalid (wpm,raw)</div>
+          </div>
+  
+          <!-- </div> -->
+          <!-- <div class="subgroup"> -->
+          <div class="group raw">
+            <div class="top">raw</div>
+            <div class="bottom" aria-label="1048.72 wpm" data-balloon-pos="up">1049</div>
+          </div>
+          <div class="group key">
+            <div class="top">characters</div>
+            <div class="bottom" aria-label="correct
+  incorrect
+  extra
+  missed" data-balloon-break="" data-balloon-pos="up">334/0/0/0</div>
+          </div>
+  
+          <!-- </div> -->
+  
+          <!-- <div class="subgroup"> -->
+          <div class="group flat consistency">
+            <div class="top">consistency</div>
+            <div class="bottom" aria-label="8.9% (53.94% key)" data-balloon-pos="up">9%</div>
+          </div>
+          <div class="group time">
+            <div class="top">time</div>
+            <div class="bottom" aria-label="3.82s (3s afk 78.53%)" data-balloon-pos="up">
+              <div class="text">4s</div>
+              <div class="afk">78.53% afk</div>
+              <div class="timeToday">00:00:26 session</div>
+            </div>
+          </div>
+          <!-- </div> -->
+  
+          <div class="group dailyLeaderboard hidden">
+            <div class="top">daily leaderboard</div>
+            <div id="dailyLeaderboardRank" aria-label="Show daily leaderboard" data-balloon-pos="up" class="bottom">
+              -
+            </div>
+          </div>
+  
+          <div class="group source">
+            <div class="top">
+              <span style="margin-right: 0.5em">source</span>
+              <span id="reportQuoteButton" class="textButton hidden" aria-label="Report quote" data-balloon-pos="up" style="display: inline-block">
+                <i class="icon fas fa-fw fa-flag"></i>
+              </span>
+              <span id="favoriteQuoteButton" class="textButton hidden" aria-label="Favorite quote" data-balloon-pos="up" style="display: inline-block">
+                <i class="icon far fa-fw fa-heart"></i>
+              </span>
+              <span id="rateQuoteButton" class="textButton hidden" aria-label="Rate quote" data-balloon-pos="up">
+                <i class="icon far fa-fw fa-star"></i>
+                <span class="rating"></span>
+              </span>
+            </div>
+            <div class="bottom">Frasier</div>
+          </div>
+        </div>
+        <div class="chart">
+          <!-- <div class="title">wpm over time</div> -->
+          <canvas id="wpmChart" height="300" style="display: block; box-sizing: border-box; height: 200px; width: 700.667px;" width="1051"></canvas>
+        </div>
+        <div class="bottom">
+          <div id="resultWordsHistory" class="hidden">
+            <div class="title">
+              <span>input history</span>
+              <button id="copyWordsListButton" class="textButton" aria-label="Copy words list" data-balloon-pos="up" style="display: inline-block" tabindex="-1">
+                <i class="fas fa-fw fa-align-left"></i>
+              </button>
+              <button id="copyMissedWordsListButton" class="textButton" aria-label="Copy missed words list" data-balloon-pos="up" tabindex="-1">
+                <i class="fas fa-fw fa-times"></i>
+              </button>
+              <button id="toggleBurstHeatmap" class="textButton" aria-label="Toggle burst heatmap" data-balloon-pos="up" style="display: inline-block" tabindex="-1">
+                <i class="fas fa-fw fa-fire-alt"></i>
+              </button>
+              <div class="heatmapLegend hidden">
+                <div class="boxes">
+                  <div class="box box0"></div>
+                  <div class="box box1"></div>
+                  <div class="box box2"></div>
+                  <div class="box box3"></div>
+                  <div class="box box4"></div>
+                </div>
+              </div>
+            </div>
+            <div class="words"></div>
+          </div>
+          <div id="resultReplay" class="hidden">
+            <div class="title">
+              watch replay
+              <button id="playpauseReplayButton" class="textButton" aria-label="Resume replay" data-balloon-pos="up" style="display: inline-block" tabindex="-1">
+                <i class="fas fa-play"></i>
+              </button>
+              <p id="replayStats"></p>
+            </div>
+            <div id="wordsWrapper">
+              <div id="replayWords" class="words"></div>
+            </div>
+          </div>
+          <button id="retrySavingResultButton" class="danger hidden">
+            <i class="fas fa-redo"></i>
+            Retry saving result
+          </button>
+          <div class="buttons">
+            <button class="text" id="nextTestButton" aria-label="Next test" role="button" data-balloon-pos="down">
+              <i class="fas fa-fw fa-chevron-right"></i>
+            </button>
+            <button class="text" id="restartTestButtonWithSameWordset" aria-label="Repeat test" role="button" data-balloon-pos="down">
+              <i class="fas fa-fw fa-sync-alt"></i>
+            </button>
+            <button class="text" id="practiseWordsButton" aria-label="Practice words" role="button" data-balloon-pos="down">
+              <i class="fas fa-fw fa-exclamation-triangle"></i>
+            </button>
+            <button class="text" id="showWordHistoryButton" aria-label="Toggle words history" role="button" data-balloon-pos="down">
+              <i class="fas fa-fw fa-align-left"></i>
+            </button>
+            <button class="text" id="watchReplayButton" aria-label="Watch replay" role="button" data-balloon-pos="down">
+              <i class="fas fa-fw fa-backward"></i>
+            </button>
+            <button class="text" id="saveScreenshotButton" aria-label="Copy screenshot to clipboard" role="button" data-balloon-pos="down">
+              <i class="far fa-fw fa-image"></i>
+            </button>
+            <!-- <button
+            class="text"
+            id="watchVideoAdButton"
+            aria-label="Watch video ad"
+            role="button"
+            data-balloon-pos="down"
+          >
+            <i class="fas fa-fw fa-ad"></i>
+          </button> -->
+          </div>
+        </div>
+        <div class="loginTip">
+          <a href="/login" router-link="">Sign in</a>
+          to save your result
+        </div>
+        <div class="ssWatermark hidden">monkeytype.com</div>
+      </div>
+      <div class="full-width" style="margin-top: 1rem">
+        <div id="ad-result-wrapper" class="ad full-width advertisement ad-h">
+          <div class="iconAndText">
+            <div class="icon"><i class="fas fa-ad"></i></div>
+            <div class="text textRight"></div>
+          </div>
+          <div id="ad-result"></div>
+        </div>
+        <div id="ad-result-small-wrapper" class="ad advertisement ad-h-s">
+          <div class="icon small"><i class="fas fa-ad"></i></div>
+          <div id="ad-result-small"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+          
+  
+          
+  
+        </main>
+        <footer class="">
+    <div id="commandLineMobileButton">
+      <i class="fas fa-terminal"></i>
+    </div>
+    <div class="keyTips">
+      <key>tab</key> + <key>enter</key> - restart test<br>
+      <key>esc</key> or <key>ctrl</key>+<key>shift</key>+<key>p</key> - command line</div>
+    <div class="leftright">
+      <div class="left">
+        <button class="textButton" id="contactPopupButton">
+          <i class="fas fa-fw fa-envelope"></i>
+          <div class="text">contact</div>
+        </button>
+        <button id="supportMeButton" class="textButton">
+          <i class="fas fa-fw fa-donate"></i>
+          <div class="text">support</div>
+        </button>
+        <a href="https://github.com/monkeytypegame/monkeytype" class="textButton" target="_blank" rel="noreferrer noopener">
+          <i class="fas fa-fw fa-code"></i>
+          <div class="text">github</div>
+        </a>
+        <a href="https://www.discord.gg/monkeytype" class="textButton" target="_blank" rel="noreferrer noopener">
+          <i class="fab fa-fw fa-discord"></i>
+          <div class="text">discord</div>
+        </a>
+        <a href="https://x.com/monkeytype" class="textButton" target="_blank" rel="noreferrer noopener">
+          <i class="fab fa-fw fa-twitter"></i>
+          <div class="text">twitter</div>
+        </a>
+        <a href="/terms-of-service.html" class="textButton" target="_blank">
+          <i class="fas fa-fw fa-file-contract"></i>
+          <div class="text">terms</div>
+        </a>
+        <a href="/security-policy.html" class="textButton" target="_blank">
+          <i class="fas fa-fw fa-shield-alt"></i>
+          <div class="text">security</div>
+        </a>
+        <a href="/privacy-policy.html" class="textButton" target="_blank">
+          <i class="fas fa-fw fa-lock"></i>
+          <div class="text">privacy</div>
+        </a>
+      </div>
+      <div class="right">
+        <button class="current-theme textButton" aria-label="Shift-click to toggle custom theme" data-balloon-pos="left">
+          <i class="fas fa-fw fa-palette"></i>
+          <div class="text">serika dark</div>
+        </button>
+        <button class="currentVersion textButton">
+          <i class="fas fa-fw fa-code-branch"></i>
+          <div class="text">v25.3.0</div>
+          <key id="newVersionIndicator" class="hidden">new</key>
+        </button>
+        <!-- <div>
+          <i class="fas fa-file"></i>
+          Terms & Conditions
+        </div> -->
+      </div>
+    </div>
+  </footer>
+  
+        
+        
+      </div>
+      <script src="https://www.google.com/recaptcha/api.js?render=explicit" async="" defer=""></script>
+      <link type="text/css" rel="stylesheet" id="currentTheme" href="/themes/serika_dark.css">
+      <link rel="stylesheet" id="funBoxTheme" href="">
+      <link rel="stylesheet" href="" id="globalFunBoxTheme" type="text/css">
+    <script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'9017fe423c031d7e',t:'MTczNjc5ODY0My4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script><iframe height="1" width="1" style="position: absolute; top: 0px; left: 0px; border: none; visibility: hidden;"></iframe>
+  
+  <canvas height="551" width="725" style="position: fixed; top: 0px; left: 0px; pointer-events: none; z-index: 999999;"></canvas><iframe marginwidth="0" marginheight="0" scrolling="no" frameborder="0" id="17f1557f50ae1f" width="0" height="0" src="about:blank" name="__pb_locator__" style="display: none; height: 0px; width: 0px; border: 0px;"></iframe><iframe name="googlefcPresent" style="display: none; width: 0px; height: 0px; border: none; z-index: -1000; left: -1000px; top: -1000px;"></iframe><div id="adBanner" class="adLeaderboard adBanner leaderboard_ad" style="background-color: transparent; height: 10px; width: 10px; position: fixed; bottom: -100px; left: -100px;">&nbsp;</div><iframe id="pw_user_data" src="https://cdn.intergient.com/pageos/2.1.11/iframe/iframe.html" style="display: none; height: 0px; width: 0px; position: fixed; bottom: -99999px;"></iframe><img src="https://ad-delivery.net/px.gif?ch=2" style="display: none !important; width: 1px !important; height: 1px !important;"><img src="https://ad.doubleclick.net/favicon.ico?ad=300x250&amp;ad_box_=1&amp;adnet=1&amp;showad=1&amp;size=250x250" style="display: none !important; width: 1px !important; height: 1px !important;"><img src="https://ad-delivery.net/px.gif?ch=1&amp;e=0.38708503119054094" style="display: none !important; width: 1px !important; height: 1px !important;"><iframe name="__tcfapiLocator" src="about:blank" style="display: none; width: 0px; height: 0px; border: none; z-index: -1000; left: -1000px; top: -1000px;"></iframe><iframe name="googlefcInactive" src="about:blank" style="display: none; width: 0px; height: 0px; border: none; z-index: -1000; left: -1000px; top: -1000px;"></iframe><iframe name="googlefcLoaded" src="about:blank" style="display: none; width: 0px; height: 0px; border: none; z-index: -1000; left: -1000px; top: -1000px;"></iframe><iframe src="https://gum.criteo.com/syncframe?origin=publishertagids&amp;topUrl=monkeytype.com&amp;gdpr=0&amp;gdpr_consent=#{&quot;lwid&quot;:{&quot;origin&quot;:0},&quot;bundle&quot;:{&quot;origin&quot;:0},&quot;optout&quot;:{&quot;value&quot;:false,&quot;origin&quot;:0},&quot;tld&quot;:&quot;monkeytype.com&quot;,&quot;topUrl&quot;:&quot;monkeytype.com&quot;,&quot;version&quot;:159,&quot;cw&quot;:true,&quot;lsw&quot;:true,&quot;origin&quot;:&quot;publishertagids&quot;,&quot;requestId&quot;:&quot;0.2724692210655517&quot;}" width="0" height="0" frameborder="0" sandbox="allow-scripts allow-same-origin" aria-hidden="true" title="Criteo GUM iframe" style="border-width: 0px; margin: 0px; display: none;"></iframe><script src="https://script-api.ccgateway.net/1/userId" type="text/javascript" async=""></script><script src="https://script-api.ccgateway.net/script/launcher/2/user.js" type="text/javascript" async=""></script><script src="https://script-api.ccgateway.net/script/launcher/1/customevents.js" type="text/javascript" async=""></script><script src="https://script-api.ccgateway.net/script/launcher/5/api.js" type="text/javascript" async=""></script><script src="https://script-api.ccgateway.net/setUser?parent=5bb3e20859&amp;site=monkeytype.com&amp;ccuid=d594476a-af9a-40ad-bc0a-f6b76f2d2475&amp;ccsid=686f27b3-befd-496a-8478-af6fb0723bef" type="text/javascript" async=""></script><script src="https://script-api.ccgateway.net/script/bundle?id=monkeytype.com&amp;parentId=5bb3e20859" type="text/javascript" async=""></script><iframe src="https://s.amazon-adsystem.com/iu3?cm3ppd=1&amp;d=dtb-pub&amp;csif=t&amp;gdpr=0&amp;dl=gg_n-mediagrid_n-index_n-adMediaV1_rx_snb_n-MediaNet_n-Beeswax_ox-db5_n-colossusMedia_cnv_n-inmobi_n-adman-v2_n-sharethrough_pm-db5_n-simpli.fi_ym_rbd_n-nativo_an-db5_sovrn_n-Rise_3lift_n-Outbrain" style="display: none;"></iframe><iframe src="https://www.google.com/recaptcha/api2/aframe" width="0" height="0" style="display: none;"></iframe></body><iframe name="goog_topics_frame" src="https://securepubads.g.doubleclick.net/static/topics/topics_frame.html" style="display: none;"></iframe><iframe name="ifrm_openx" src="https://pa.openx.net/topics_frame.html?bidder=openx" style="display: none;"></iframe><iframe name="ifrm_pubmatic" src="https://ads.pubmatic.com/AdServer/js/topics/topics_frame.html?bidder=pubmatic" style="display: none;"></iframe><iframe sandbox="allow-scripts allow-same-origin" id="5611f7787859ef6" frameborder="0" allowtransparency="true" marginheight="0" marginwidth="0" width="0" hspace="0" vspace="0" height="0" style="height:0px;width:0px;display:none;" scrolling="no" src="https://ssum-sec.casalemedia.com/usermatch?s=184674&amp;gdpr=&amp;gdpr_consent=&amp;us_privacy=&amp;gpp=&amp;gppsid=&amp;cb=http%3A%2F%2Flocalhost%3A8000%2Fsetuid%3Fbidder%3Dix%26gdpr%3D%26gdpr_consent%3D%26gpp%3D%26gpp_sid%3D%26f%3Db%26uid%3D">
+      </iframe><iframe sandbox="allow-scripts allow-same-origin" id="578eb75bf0dd147" frameborder="0" allowtransparency="true" marginheight="0" marginwidth="0" width="0" hspace="0" vspace="0" height="0" style="height:0px;width:0px;display:none;" scrolling="no" src="https://sdk.streamrail.com/cs-config/cs.html?org=6280c6f1899612000123320b&amp;tc=62fa3ffe716915000133a9c7&amp;as=62fa3ffe716915000133a9c9&amp;type=hb&amp;wd=cs.yellowblue.io&amp;domain=monkeytype.com">
+      </iframe><iframe sandbox="allow-scripts allow-same-origin" id="580cdd9857ee098" frameborder="0" allowtransparency="true" marginheight="0" marginwidth="0" width="0" hspace="0" vspace="0" height="0" style="height:0px;width:0px;display:none;" scrolling="no" src="https://gum.criteo.com/syncframe?origin=criteoPrebidAdapter&amp;topUrl=monkeytype.com&amp;gpp=#{%22bundle%22:%22I9zJNV8wMmJ4S1pZMkZNeHUzWkRCRmtaZ3JJQmtndDJiTko1MlhyQTJIY0J4JTJCUGM2T1lkNWNuZGQyNzA4TFN1YnZhekhRSnJTVUlaWkJPMTRENjY0akdIeXdDdVZ3dTJ2U1kyQ1FmYnNFNE1oREVlRSUyRnRiOWR3ODJFRUdZT3NJaFlqOEY%22,%22cw%22:true,%22lsw%22:true,%22origin%22:%22criteoPrebidAdapter%22,%22requestId%22:%220.559767712288201%22,%22tld%22:%22monkeytype.com%22,%22topUrl%22:%22monkeytype.com%22,%22version%22:%229_11_0%22}">
+      </iframe><iframe sandbox="allow-scripts allow-same-origin" id="591a475b305bb34" frameborder="0" allowtransparency="true" marginheight="0" marginwidth="0" width="0" hspace="0" vspace="0" height="0" style="height:0px;width:0px;display:none;" scrolling="no" src="https://js-sec.indexww.com/um/ixmatch.html">
+      </iframe><iframe sandbox="allow-scripts allow-same-origin" id="608ad07538957a2" frameborder="0" allowtransparency="true" marginheight="0" marginwidth="0" width="0" hspace="0" vspace="0" height="0" style="height:0px;width:0px;display:none;" scrolling="no" src="https://sync.cootlogix.com/api/sync/iframe/?cid=665db4754b2ec067196b8f78&amp;gdpr=0&amp;gdpr_consent=&amp;us_privacy=">
+      </iframe><iframe sandbox="allow-scripts allow-same-origin" id="619023940169e4c" frameborder="0" allowtransparency="true" marginheight="0" marginwidth="0" width="0" hspace="0" vspace="0" height="0" style="height:0px;width:0px;display:none;" scrolling="no" src="https://playwire-d.openx.net/w/1.0/pd">
+      </iframe><iframe sandbox="allow-scripts allow-same-origin" id="625297c890c849e" frameborder="0" allowtransparency="true" marginheight="0" marginwidth="0" width="0" hspace="0" vspace="0" height="0" style="height:0px;width:0px;display:none;" scrolling="no" src="https://acdn.adnxs.com/dmp/async_usersync.html">
+      </iframe><iframe sandbox="allow-scripts allow-same-origin" id="630d56e59fc5b08" frameborder="0" allowtransparency="true" marginheight="0" marginwidth="0" width="0" hspace="0" vspace="0" height="0" style="height:0px;width:0px;display:none;" scrolling="no" src="https://eb2.3lift.com/sync?">
+      </iframe><iframe sandbox="allow-scripts allow-same-origin" id="64b17d99dd79366" frameborder="0" allowtransparency="true" marginheight="0" marginwidth="0" width="0" hspace="0" vspace="0" height="0" style="height:0px;width:0px;display:none;" scrolling="no" src="https://eus.rubiconproject.com/usync.html">
+      </iframe><iframe sandbox="allow-scripts allow-same-origin" id="65caa1cced15dd2" frameborder="0" allowtransparency="true" marginheight="0" marginwidth="0" width="0" hspace="0" vspace="0" height="0" style="height:0px;width:0px;display:none;" scrolling="no" src="https://ads.pubmatic.com/AdServer/js/user_sync.html?kdntuid=1&amp;p=158326">
+      </iframe><iframe sandbox="allow-scripts allow-same-origin" id="660eb75586feed5" frameborder="0" allowtransparency="true" marginheight="0" marginwidth="0" width="0" hspace="0" vspace="0" height="0" style="height:0px;width:0px;display:none;" scrolling="no" src="https://pbs-cs.yellowblue.io/pbs-iframe?gdpr=&amp;gdpr_consent=&amp;us_privacy=&amp;redirect=http%3A%2F%2Flocalhost%3A8000%2Fsetuid%3Fbidder%3Drise%26gdpr%3D%26gdpr_consent%3D%26gpp%3D%26gpp_sid%3D%26f%3Db%26uid%3D%5BPBS_UID%5D">
+      </iframe><iframe sandbox="allow-scripts allow-same-origin" id="672b0e46991bca1" frameborder="0" allowtransparency="true" marginheight="0" marginwidth="0" width="0" hspace="0" vspace="0" height="0" style="height:0px;width:0px;display:none;" scrolling="no" src="https://ads.pubmatic.com/AdServer/js/user_sync.html?gdpr=&amp;gdpr_consent=&amp;us_privacy=&amp;predirect=http%3A%2F%2Flocalhost%3A8000%2Fsetuid%3Fbidder%3Dpubmatic%26gdpr%3D%26gdpr_consent%3D%26gpp%3D%26gpp_sid%3D%26f%3Db%26uid%3D">
+      </iframe><iframe sandbox="allow-scripts allow-same-origin" id="682ceefdf5bac4f" frameborder="0" allowtransparency="true" marginheight="0" marginwidth="0" width="0" hspace="0" vspace="0" height="0" style="height:0px;width:0px;display:none;" scrolling="no" src="https://rtb.gumgum.com/usync/prbds2s?gdpr=&amp;gdpr_consent=&amp;us_privacy=&amp;r=http%3A%2F%2Flocalhost%3A8000%2Fsetuid%3Fbidder%3Dgumgum%26gdpr%3D%26gdpr_consent%3D%26gpp%3D%26gpp_sid%3D%26f%3Db%26uid%3D">
+      </iframe><iframe sandbox="allow-scripts allow-same-origin" id="69d15245ad65fa7" frameborder="0" allowtransparency="true" marginheight="0" marginwidth="0" width="0" hspace="0" vspace="0" height="0" style="height:0px;width:0px;display:none;" scrolling="no" src="https://u.openx.net/w/1.0/cm?id=891039ac-a916-42bb-a651-4be9e3b201da&amp;ph=a3aece0c-9e80-4316-8deb-faf804779bd1&amp;gdpr=&amp;gdpr_consent=&amp;r=http%3A%2F%2Flocalhost%3A8000%2Fsetuid%3Fbidder%3Dopenx%26gdpr%3D%26gdpr_consent%3D%26gpp%3D%26gpp_sid%3D%26f%3Db%26uid%3D%7BOPENX_ID%7D">
+      </iframe><iframe sandbox="allow-scripts allow-same-origin" id="70001cbdfb40f69" frameborder="0" allowtransparency="true" marginheight="0" marginwidth="0" width="0" hspace="0" vspace="0" height="0" style="height:0px;width:0px;display:none;" scrolling="no" src="https://eb2.3lift.com/sync?gdpr=&amp;cmp_cs=&amp;us_privacy=&amp;gpp=&amp;gpp_sid=&amp;redir=http%3A%2F%2Flocalhost%3A8000%2Fsetuid%3Fbidder%3Dtriplelift%26gdpr%3D%26gdpr_consent%3D%26gpp%3D%26gpp_sid%3D%26f%3Db%26uid%3D%24UID">
+      </iframe></html>
